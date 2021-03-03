@@ -1,0 +1,431 @@
+*body {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navbar-brand {
+    font-family: Viga, sans-serif;
+    font-size: 32px;
+    margin: 20px 0 0 10px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.nav-link {
+  font-family: 'Josefin Sans', sans-serif;
+    margin-right: 30px;
+    margin: 0 0 0 10px;
+}
+
+.navbar-toggler {
+    float: right;
+    margin-top: -38px;
+}
+
+#navbarNavAltMarkup {
+  margin-top: 20px;
+}
+
+.Logo-Toko {
+  float: left;
+}
+/* Dekstop vesion */
+@media (min-width: 992px) {
+  #navbarNavAltMarkup {
+    margin-top: -1px;
+  }
+ 
+  .navbar-brand {
+    float: left;
+    margin-top: -1px;
+  }
+  
+  .collapse {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  .nav-link {
+    /* font-size: 32px; */
+    font-size: 1rem;
+    margin-right: 30px;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-top: -8px;
+  }
+}
+/* Akhir-Navbar */
+
+/* Carousel */
+/* Ngatur tinggi content gambar */
+
+#content .intro-home{
+  background-image: url(../img/wallpaper.jpg);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.buttonmenu {
+  margin-top: 30px;
+}
+
+#content .preview-title{
+  width: 60%;
+  padding: 20px;
+  margin-top: -70px;
+  color: white;
+}
+
+#content .preview-title h1{
+  font-family: 'Raleway', sans-serif, bold;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#content .preview-desc{
+  padding: 20px;
+  width: 40%;
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;   
+}
+
+#content .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 3px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #233567;
+}
+
+#content .btn-get-started:hover {
+  background: #233567;
+  color: #fff;
+  text-decoration: none;
+}
+
+#intro .item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+
+
+#content .intro-home{
+  display: block;
+  background-image: url(../img/ikan-nav.jpg);
+  padding: 120px 20px;
+  background-size: cover;
+}
+
+#content .preview-title{
+  width: 100%;
+}
+
+#content .preview-desc{
+  width: 100%;
+}
+
+
+@media (min-width: 992px) {
+  /* Ngatur tinggi content gambar */
+  
+  #content .intro-home{
+    background-image: url(../img/ikan-nav.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  
+  #content .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 3px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #233567;
+  }
+  
+  #content .btn-get-started:hover {
+    background: #00428a;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #content .preview-title{
+    width: 60%;
+    padding: 20px;
+    margin-top: -128px;
+    color: white;
+  }
+  
+  #content .preview-title h1{
+    font-family: 'Raleway', sans-serif, bold;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #content .preview-desc{
+    padding: 20px;
+    width: 40%;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;   
+  }
+
+  
+}
+
+/* Akhir-Carousel */
+
+
+/* Service */
+#mu-service {
+  display: inline;
+  float: left;
+  margin-top: -80px;
+  width: 100%;
+}
+#mu-service .mu-service-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-service .mu-service-area .mu-service-single {
+  background-color: #01bafd;
+  color: #fff;
+  display: inline;
+  float: left;
+  padding: 35px 25px;
+  text-align: center;
+  width: 33.33%;
+}
+#mu-service .mu-service-area .mu-service-single:nth-child(2) {
+  background-color: #2ecc71;
+}
+#mu-service .mu-service-area .mu-service-single:nth-child(3) {
+  background-color: #45a0de;
+}
+#mu-service .mu-service-area .mu-service-single span {
+  font-size: 30px;
+}
+#mu-service .mu-service-area .mu-service-single h3 {
+  font-size: 25px;
+}
+#mu-service .mu-service-area .mu-service-single p {
+  font-weight: lighter;
+}
+
+@media (max-width: 640px) {
+  #mu-service {
+    margin-top: 30px;
+  }
+
+  #mu-service .mu-service-area .mu-service-single {
+    padding: 20px 5px;
+  }
+
+  #mu-service .mu-service-area .mu-service-single h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #mu-service .mu-service-area .mu-service-single {
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  #mu-service .mu-service-area .mu-service-single h3 {
+    font-size: 18px;
+  }
+}
+/* Akhir-Service */
+
+/* About US */
+#mu-about-us {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#mu-about-us .mu-about-us-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-left ul li {
+  line-height: 30px;
+  list-style: circle;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right {
+  display: inline;
+  float: left;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a img {
+  width: 100%;
+}
+#mu-about-us .mu-about-us-area .mu-about-us-right a:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #ddd;
+  content: '\f04b';
+  font-family: fontAwesome;
+  font-size: 50px;
+  left: 0;
+  padding-top: 27%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+#mu-about-us .moto-toko {
+  font-family: Viga, sans-serif;
+}
+/* Akhir-About US */
+
+/* Profile-Anggota, Toko, Produk, Pegawai */
+#mu-abtus-counter {
+  background-image: url("../img/counter-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+#mu-abtus-counter .mu-abtus-counter-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
+  border-right: 2px solid #888;
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+}
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+#mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single p {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#mu-abtus-counter .mu-abtus-counter-area .no-border {
+  border: none;
+}
+
+@media (max-width: 991px) {
+  #mu-abtus-counter {
+    background-size: 100% 100%;
+    padding: 60px 0;
+  }
+
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
+    font-size: 40px;
+  }
+
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  #mu-abtus-counter {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
+    border: medium none;
+    margin-bottom: 25px;
+  }
+}
+/* Akhir - Profile-Anggota, Toko, Produk, Pegawai */
+
+/* Card Product */
+
+/* Akhir - Card Product */
+
+
+/* Footer */
+
+/* Akhir - Footer */
